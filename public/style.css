@@ -120,15 +120,16 @@ body {
     margin: 0% 3%;
   }
 } */
-@media screen and (max-width:720px) {
+@media screen and (min-width:720px) {
   .title {
-    color: red;
+    /* color: red; */
   }
 
   .footer{
 
     flex: none;
-  
+    position:elative;
+    top: 1em;
 
   }
   .info{
