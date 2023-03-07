@@ -35,7 +35,7 @@ const createScene = () => {
     fieldOfView,
     aspectRatio,
     nearPlane,
-    farPlane,
+    farPlane
   );
 
   camera.position.x = 0;
@@ -52,10 +52,10 @@ const createScene = () => {
   renderer.shadowMap.enabled = true;
   renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 
-  container = document.getElementById('canvas');
+  container = document.getElementById("canvas");
   container.appendChild(renderer.domElement);
 
-  window.addEventListener('resize', handleWindowResize, false);
+  window.addEventListener("resize", handleWindowResize, false);
 };
 
 const handleWindowResize = () => {
@@ -354,7 +354,7 @@ function Truck() {
     1,
     false,
     0,
-    Math.PI,
+    Math.PI
   );
   let roofDetail1 = new THREE.Mesh(geomRoofDetail1, matTruckDetails);
   roofDetail1.position.x = -120;
@@ -394,7 +394,7 @@ const createTruck = () => {
 const createFloor = () => {
   let floor = new THREE.Mesh(
     new THREE.PlaneBufferGeometry(4000, 4000),
-    new THREE.MeshPhongMaterial({ color: 0x9977eb, flatShading: true }),
+    new THREE.MeshPhongMaterial({ color: 0x9977eb, flatShading: true })
   );
   floor.rotation.x -= Math.PI / 2;
   floor.position.y = 45;
@@ -430,4 +430,4 @@ const main = () => {
   loop();
 };
 
-window.addEventListener('load', main, false);
+window.addEventListener("load", main, false);
