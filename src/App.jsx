@@ -1,11 +1,16 @@
 import './App.css'
+import About from './Components/About/About'
+import Hero from './Components/Hero/Hero'
 
 function App() {
 
   return (
     <div className="App">
 
-      <h1> Hello World! </h1>
+      <Hero/>
+      <About/>
+
+  
      
     </div>
   )
