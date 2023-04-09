@@ -1,4 +1,23 @@
 .AboutContainer{
-    min-height: 70vh;
+
+    min-height: 82vh;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     
 }
+
+.description{
+    padding-right: 4.8em;
+
+    font-weight: 400;
+    font-size: var(--text-size-m);
+    line-height: 35px;
+    letter-spacing: var(--letter-spacing-m);
+}
+
+.tempbutton{
+    padding-top: 8em;
+}
+
+

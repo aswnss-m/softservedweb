@@ -1,4 +1,6 @@
 .HeroSection{
+
+    min-height: 100vh;
     display: flex;
     flex-direction:column;
     align-items: center;
@@ -12,7 +14,7 @@
 }
 .TitleContainer {
 
-    padding:8em 0 0 6em;
+    /* padding:8em 0 0 6em; */
 
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -35,7 +37,7 @@
 .ScrollableTile{
 
     box-sizing: border-box;
-    width: 1260px;
+    width: 1320px;
     height: 46px;
     border: 1.3px solid var(--text-black);
     /* transform: matrix(1, 0, 0, 1, 0, 0); */

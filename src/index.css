@@ -17,7 +17,9 @@
 
     --text-size-xl: 7.5em;
     --text-size-m: 1.625em;
-    --text-size-s: 1.625em;
+    --text-size-s: 1.5em;
+    --text-size-xs: 20px ;
+    --text-size-xxs: 14px ;
 
 }
 
