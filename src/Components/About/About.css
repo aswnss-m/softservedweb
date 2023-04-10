@@ -25,13 +25,14 @@
 .tempImage {
     /* width: 100%; */
     max-width: 100%;
-    
+
 }
 
-.buttonContainter{
+.buttonContainter {
     padding-top: 6em;
 }
-.myButton{
+
+.myButton {
 
     display: inline-block;
     padding: 15px 25px;
@@ -46,34 +47,35 @@
     position: relative;
 
     border: 2px solid var(--bg-primary);
-    
+
 
     text-transform: uppercase;
     font-family: 'thinoothin';
     font-weight: 600;
-  }
- 
-  .myButton:hover {
+}
+
+.myButton:hover {
     background-color: #050505;
     transform: translateX(-2px);
     border: 2px solid var(--bg-primary);
-    animation:20ms
-  }
+    animation: 20ms
+}
 
-  .myButton:active {
+.myButton:active {
     background-color: #050505;
-  }
+}
 
 
-.buttonBG{
-    background-color:var(--color-darkGreen);
+.buttonBG {
+    background-color: var(--color-darkGreen);
     padding: 20px 40px;
 
-    position: absolute; /* Add position absolute to pseudo-element */
-    
+    position: absolute;
+    /* Add position absolute to pseudo-element */
+
     /* z-index: 2; */
     /* left: 0%; */
-    left:0;
+    left: 0;
     top: 0;
     width: 120%;
     height: 130%;
@@ -83,35 +85,37 @@
     z-index: -1;
 
 }
+
 @media only screen and (max-width:1920px) {}
 
 @media only screen and (max-width:1200px) {}
 
 @media only screen and (max-width:992px) {
     .description {
-    font-size: var(--text-size-s);
-    
+        font-size: var(--text-size-s);
+
 
     }
 
 }
-@media only screen and (max-width : 880px){
-    .AboutContainer{
+
+@media only screen and (max-width : 880px) {
+    .AboutContainer {
         grid: none;
         display: flex;
-        flex-direction:column-reverse;
+        flex-direction: column-reverse;
         gap: 2em;
     }
-    .description{
-        padding-right:0.1px
+
+    .description {
+        padding-right: 0.1px
+    }
+
+    .buttonContainter {
+        padding-bottom: 4em;
     }
 }
 
-@media only screen and (max-width:620px) {
-
-    /* .tempImage{
-        max-width: 80%;
-    } */
-}
+@media only screen and (max-width:620px) {}
 
 @media only screen and (max-width:450px) {}

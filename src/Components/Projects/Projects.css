@@ -11,7 +11,8 @@
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
 } */
-.firstRow,.secondRow{
+.firstRow,
+.secondRow {
 
     display: grid;
     grid-gap: 1.25em;
@@ -32,13 +33,14 @@
     grid-gap: 1.25rem;
 
 }
-.box img{
+
+.box img {
     width: 100%;
     overflow: hidden;
 }
 
 .box {
-   
+
     overflow: hidden;
     position: relative;
 
@@ -83,5 +85,30 @@
     height: 100%;
     border-radius: 12px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) -7.09%, rgba(0, 0, 0, 0) 21.04%);
-  }
-  
+}
+
+
+@media only screen and (max-width:1920px) {}
+
+@media only screen and (max-width:1200px) {}
+
+@media only screen and (max-width:992px) {}
+
+@media only screen and (max-width : 880px) {
+
+    .projectContainer{
+        grid-template-columns: none; 
+    }
+
+}
+
+@media only screen and (max-width:620px) {
+
+    .textLayer{
+        font-size: var(--text-size-xxs);
+        letter-spacing: var(--letter-spacing-l);
+
+    }
+}
+
+@media only screen and (max-width:450px) {}
