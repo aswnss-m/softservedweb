@@ -4,7 +4,8 @@
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-
+    
+    transition: all 0.5s ease-out;  
 
 }
 
@@ -15,5 +16,39 @@
     line-height: 24px;
     letter-spacing: var(--letter-spacing-m);
     text-transform: capitalize;
+
+    color: var( --bg-primary-dark);
 }
 
+.socials,.bio{
+    padding-block: 0.1em;
+    cursor: pointer;
+}
+.footerSection h3:hover{
+    color: var(--color-blue);
+    transition: 0.75s;
+}
+
+@media only screen and (max-width:992px) {}
+
+@media only screen and (max-width : 880px) {
+    .footerSection {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2em;
+        row-gap: 2em;
+
+
+    }
+}
+
+@media only screen and (max-width:620px) {}
+
+@media only screen and (max-width:390px) {
+
+    .footerSection h3{
+
+        font-size: 1em;
+
+    }
+
+}

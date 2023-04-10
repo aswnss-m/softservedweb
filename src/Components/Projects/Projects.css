@@ -1,5 +1,7 @@
 .projectSection {
     min-height: 100vh;
+    
+    transition: all 0.5s ease-out;
 
 }
 
@@ -50,7 +52,17 @@
 }
 
 
+.box:hover img {
+    filter: blur(3px);
+    transition: filter 0.5s ease-in-out;
 
+  }
+
+/* .box:hover .overlay {
+    opacity: 0.5;
+
+  }
+   */
 
 .textLayer {
 
@@ -86,6 +98,7 @@
     border-radius: 12px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) -7.09%, rgba(0, 0, 0, 0) 21.04%);
 }
+
 
 
 @media only screen and (max-width:1920px) {}
