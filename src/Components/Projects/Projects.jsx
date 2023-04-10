@@ -9,6 +9,8 @@ import {
   boxImage6,
 } from "../../assets/export";
 
+import { Link } from "react-router-dom";
+
 function Projects() {
   return (
     <div className="projectSection">
@@ -16,70 +18,76 @@ function Projects() {
         <div className="firstRow">
           <div className="colBox1">
             <div className="box box1">
+              <a href="">
                 <div class="overlay"></div>
-              <img src={boxImage1} alt="" />
-              <div className="textLayer">
-                <p className="smallDesc">Recent Project.Suee Store</p>
-                <p>Aniz BIn Nowshad</p>
-              </div>
-              
+                <img src={boxImage1} alt="" />
+                <div className="textLayer">
+                  <p className="smallDesc">Recent Project.Suee Store</p>
+                  <p>Aniz Bin Nowshad</p>
+                </div>
+              </a>
             </div>
 
             <div className="box box2">
+              <a href="">
                 <div class="overlay"></div>
-              <img src={boxImage2} alt="" />
+                <img src={boxImage2} alt="" />
 
-              <div className="textLayer">
-                <p className="smallDesc">Recent Project.Suee Store</p>
-                <p>Aniz BIn Nowshad</p>
-              </div>
-
+                <div className="textLayer">
+                  <p className="smallDesc">Recent Project.Suee Store</p>
+                  <p>Aniz BIn Nowshad</p>
+                </div>
+              </a>
             </div>
           </div>
 
           <div className="box box3">
-            <div class="overlay"></div>
-            <img src={boxImage3} alt="" />
+            <a href="">
+              <div class="overlay"></div>
+              <img src={boxImage3} alt="" />
 
-            <div className="textOverlay">
-            <div className="textLayer">
-                <p className="smallDesc">Recent Project.Suee Store</p>
-                <p>Aniz BIn Nowshad</p>
+              <div className="textOverlay">
+                <div className="textLayer">
+                  <p className="smallDesc">Recent Project.Suee Store</p>
+                  <p>Aniz BIn Nowshad</p>
+                </div>
               </div>
-              
-            </div>
+            </a>
           </div>
         </div>
 
         <div className="secondRow">
           <div className="box box3">
-            <div class="overlay"></div>
-            <img src={boxImage4} alt="" />
-            <div className="textLayer">
+            <a href="">
+              <div class="overlay"></div>
+              <img src={boxImage4} alt="" />
+              <div className="textLayer">
                 <p className="smallDesc">Recent Project.Suee Store</p>
                 <p>Aniz BIn Nowshad</p>
               </div>
-              
+            </a>
           </div>
 
           <div className="colBox2">
             <div className="box box2">
+              <a href="">
                 <div class="overlay"></div>
-              <img src={boxImage5} alt="" />
-              <div className="textLayer">
-                <p className="smallDesc">Recent Project.Suee Store</p>
-                <p>Aniz BIn Nowshad</p>
-              </div>
-              
+                <img src={boxImage5} alt="" />
+                <div className="textLayer">
+                  <p className="smallDesc">Recent Project.Suee Store</p>
+                  <p>Aniz BIn Nowshad</p>
+                </div>
+              </a>
             </div>
             <div className="box box1">
+              <a href="">
                 <div class="overlay"></div>
-              <img src={boxImage6} alt="" />
-              <div className="textLayer">
-                <p  className="smallDesc">Recent Project.Suee Store</p>
-                <p>Aniz BIn Nowshad</p>
-              </div>
-              
+                <img src={boxImage6} alt="" />
+                <div className="textLayer">
+                  <p className="smallDesc">Recent Project.Suee Store</p>
+                  <p>Aniz BIn Nowshad</p>
+                </div>
+              </a>
             </div>
           </div>
         </div>

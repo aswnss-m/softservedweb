@@ -2,8 +2,8 @@
 
     min-height: 100vh;
     display: flex;
-    flex-direction:column;
-    align-items: center;
+    /* flex-direction:column;
+    align-items: center; */
 }
 .container{
 
@@ -39,7 +39,8 @@
     box-sizing: border-box;
     width: 1320px;
     height: 46px;
-    border: 1.3px solid var(--text-black);
+    border: 1px solid var(--text-black);
+    border-radius: 6px;
     /* transform: matrix(1, 0, 0, 1, 0, 0); */
 
     display: flex;
@@ -48,3 +49,88 @@
     justify-content: center;
     
 }
+
+.ScrollableTile h3{
+
+    font-weight: 400;
+    font-size: var(--text-size-xs);
+    /* font-family: 'thinoo'; */
+    letter-spacing: var(--letter-spacing-m);
+    color: var(--color-red);
+
+    animation: marquee-animation 30s linear infinite;
+}
+
+
+.ScrollableTile {
+    overflow: hidden;
+  }
+  .marquee {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 30s linear infinite;
+  }
+  .marquee h3 {
+    display: inline-block;
+    margin-right: 100px;
+  }
+
+  .marquee:hover {
+
+    animation-play-state: paused ease-in-out;
+}
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+ 
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+
+ /* .ScrollableTile {
+    overflow: hidden;
+  }
+.ScrollableTile::before {
+    left: 0;
+    top: 0;
+}
+
+.ScrollableTile::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+.marquee {
+    width: calc(50vw * 7);
+    display: flex;
+    animation: scroll 40s linear infinite;
+    justify-content: space-between;
+}
+
+.marquee:hover {
+
+    animation-play-state: paused ease-in-out;
+} */
+
+
+
+
+@keyframes scroll {
+    0% {
+        transform: translateX(5vw);
+    }
+
+    /* 50%{
+        transform:translateX(-50vw)
+    } */
+
+    100% {
+        transform: translateX(calc(-15vw * 3.5));
+    }
+}
+
+

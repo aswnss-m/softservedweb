@@ -1,0 +1,11 @@
+.comingSoonSection{
+    
+    min-height: 100vh;
+    text-align: center;
+}
+
+.comingSoonText{
+    font-weight: 400;
+    font-size: var(--text-size-xl);
+    letter-spacing: var(--letter-spacing-l);
+}

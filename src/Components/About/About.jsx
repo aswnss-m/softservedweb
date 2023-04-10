@@ -1,12 +1,11 @@
 import React from "react";
 import "./About.css";
 
-import { tempPic,button } from "../../assets/export";
+import { tempPic, button } from "../../assets/export";
 
 function About() {
   return (
     <div className="AboutContainer">
-      
       <div className="descriptionBox">
         <p className="description">
           With Soft served web, you can easily create and manage your websites
@@ -15,18 +14,20 @@ function About() {
           running in no time.
         </p>
         <a href="https://bento.me/aniz">
-        <div className="tempbutton">
+          {/* <div className="tempbutton">
           <img className = "buttonText" src={button} alt="button" />
-        </div>
+        </div> */}
+          <div className="buttonContainter">
+            <button className="myButton">
+              <div className="buttonBG"></div>
+              Talk Bussiness
+            </button>
+          </div>
         </a>
-        {/* <button className="buttonBox">Talk Bussiness</button> */}
       </div>
       <div className="rightBox">
-        <div className="tempImage">
-          <img src={tempPic} alt="Talk Bussiness" />
-        </div>
+        <img className="tempImage" src={tempPic} alt="Talk Bussiness" />
       </div>
-
     </div>
   );
 }
