@@ -97,63 +97,118 @@
 }
 
 
-/* .ScrollableTile {
-    overflow: hidden;
-  }
-.ScrollableTile::before {
-    left: 0;
-    top: 0;
-}
-
-.ScrollableTile::after {
-    right: 0;
-    top: 0;
-    transform: rotateZ(180deg);
-}
-
-.marquee {
-    width: calc(50vw * 7);
+.cardContainer {
     display: flex;
-    animation: scroll 40s linear infinite;
-    justify-content: space-between;
+    /* flex-direction: column; */
 }
+
+
+.scrollableCardTop,
+.scrollableCardBottom {
+    height: 400px;
+    overflow-y: scroll;
+
+}
+
+
+.scrollableCardTop {
+
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    max-height: 50%;
+    overflow: hidden;
+}
+
+.topScroll {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    animation: scroll-top 15s linear infinite;
+}
+
+.topScroll img {
+    border-radius: 12px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+
+    width: 200px;
+    margin: 10px;
+}
+
+@keyframes scroll-top {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* .scrollableCardBottom {
+    overflow: hidden;
+} */
+
+.scrollableCardBottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    max-height: 50%;
+    overflow: hidden;
+
+    bottom: 0;
+}
+
+.bottomScroll {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    animation: scroll-bottom 15s linear infinite;
+}
+
+.bottomScroll img {
+    border-radius: 12px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+
+    width: 200px;
+    margin: 10px;
+}
+
+@keyframes scroll-bottom {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+.scrollableCardTop {
+    top: 0;
+    animation: scroll 10s linear infinite;
+  }
+  
+  .scrollableCardBottom {
+    bottom: 0;
+    animation: bottom-scroll 10s linear infinite;
+  }
+  
 
 .marquee:hover {
 
     animation-play-state: paused ease-in-out;
-} */
-
-
-
-
-@keyframes scroll {
-    0% {
-        transform: translateX(5vw);
-    }
-
-    /* 50%{
-        transform:translateX(-50vw)
-    } */
-
-    100% {
-        transform: translateX(calc(-15vw * 3.5));
-    }
 }
 
 
-/* ANIMATION  */
 
-@keyframes roundandround {
-    to {
-        transform: rotateX(360deg) rotateY(360deg);
-    }
-}
 
-@keyframes show {
-    to {
-        opacity: 1;
-    }
-}
 
 /* body {
     background-color: #000000;
@@ -349,10 +404,10 @@
 
 @media only screen and (max-width:992px) {
 
-    .ScrollableTile{
+    .ScrollableTile {
         width: 100%;
         height: 46px;
-      }
+    }
 }
 
 @media only screen and (max-width : 880px) {}
