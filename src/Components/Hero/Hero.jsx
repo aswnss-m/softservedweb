@@ -44,7 +44,6 @@ function Hero() {
           </div>
         </div> */}
 
-
       <div className="container">
         <div className="TitleContainer">
           <div className="titleMain">
@@ -53,56 +52,63 @@ function Hero() {
             <h1 className="title Web">Web</h1>
           </div>
 
-        <div className="cardContainer">
-
-        
-        <div className="scrollableCardTop">
-        <div className="topScroll">
-          <img src={card101} alt="" />
-          <img src={card111} alt="" />
-          <img src={card202} alt="" />
-          <img src={card222} alt="" />
-          <img src={card303} alt="" />
-          <img src={card333} alt="" />
-        </div>
-        <div className="topScroll">
-          <img src={card101} alt="" />
-          <img src={card111} alt="" />
-          <img src={card202} alt="" />
-          <img src={card222} alt="" />
-          <img src={card303} alt="" />
-          <img src={card333} alt="" />  
-          <img src={card333} alt="" />  
-
-
-        </div>
-      </div>
-        <div className="scrollableCardBottom">
-        <div className="bottomScroll">
-          <img src={card101} alt="" />
-          <img src={card111} alt="" />
-          <img src={card202} alt="" />
-          <img src={card222} alt="" />
-          <img src={card303} alt="" />
-          <img src={card333} alt="" />
-        </div>
-        <div className="bottomScroll">
-          <img src={card101} alt="" />
-          <img src={card111} alt="" />
-          <img src={card202} alt="" />
-          <img src={card222} alt="" />
-          <img src={card303} alt="" />
-          <img src={card333} alt="" />
-          <img src={card101} alt="" />
-          {/* <img src={card111} alt="" /> */}
-
-          
-   
-      
-        </div>
-      </div>
-      </div>
-
+          <div className="cardContainer">
+            <div className="scrollableCardTop">
+              <div className="topScroll">
+                <img src={card101} alt="" />
+                <img src={card111} alt="" />
+                <img src={card202} alt="" />
+                <img src={card222} alt="" />
+                <img src={card303} alt="" />
+                <img src={card333} alt="" />
+                <img src={card101} alt="" />
+                <img src={card111} alt="" />
+                <img src={card202} alt="" />
+                <img src={card222} alt="" />
+                <img src={card303} alt="" />
+                <img src={card333} alt="" />
+              </div>
+              <div className="topScroll">
+                <img src={card101} alt="" />
+                <img src={card111} alt="" />
+                <img src={card202} alt="" />
+                <img src={card222} alt="" />
+                <img src={card303} alt="" />
+                <img src={card333} alt="" />
+                <img src={card101} alt="" />
+                <img src={card111} alt="" />
+     
+              </div>
+              {/* <div className="topScroll">
+                <img src={card101} alt="" />
+                <img src={card111} alt="" />
+                <img src={card202} alt="" />
+                <img src={card222} alt="" />
+                <img src={card303} alt="" />
+                <img src={card333} alt="" />
+                <img src={card333} alt="" />
+              </div> */}
+            </div>
+            {/* <div className="scrollableCardBottom">
+              <div className="bottomScroll">
+                <img src={card101} alt="" />
+                <img src={card111} alt="" />
+                <img src={card202} alt="" />
+                <img src={card222} alt="" />
+                <img src={card303} alt="" />
+                <img src={card333} alt="" />
+              </div>
+              <div className="bottomScroll">
+                <img src={card101} alt="" />
+                <img src={card111} alt="" />
+                <img src={card202} alt="" />
+                <img src={card222} alt="" />
+                <img src={card303} alt="" />
+                <img src={card333} alt="" />
+                <img src={card101} alt="" />
+              </div>
+            </div> */}
+          </div>
         </div>
 
         <div className="ScrollableTile">

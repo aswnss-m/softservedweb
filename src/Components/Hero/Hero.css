@@ -97,6 +97,7 @@
 }
 
 
+
 .cardContainer {
     display: flex;
     /* flex-direction: column; */
@@ -124,6 +125,7 @@
 }
 
 .topScroll {
+    top: 0;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
