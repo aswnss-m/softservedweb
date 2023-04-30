@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Card.css"
 import { boxImage6 } from '../../assets/export'
+import {Link} from "react-router-dom"
 
 function Card(props) {
   return (
@@ -9,9 +10,7 @@ function Card(props) {
         <div className="blogContents">
             <h3 className="blogTitle">{props.Title}</h3>
             <p className="blogContent">{props.Descp.slice(0,150)}...</p>
-            <button type = 'button' className="arrow" onClick={()=>{
-                alert("CLIKK")
-            }} >&#8600;</button>
+            <Link to={`/Blogs/${props.id}`} >&#8600;</Link>
         </div>
     </div>
   )

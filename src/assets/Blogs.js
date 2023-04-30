@@ -1,5 +1,6 @@
 const Blogs = [
     {
+        id:0,
         Title : "Ai Auto Gpt",
         Content : `Artificial intelligence (AI) has revolutionized many industries, including healthcare, finance, transportation, and retail. It involves the development of computer systems that can perform tasks that typically require human intelligence, such as learning, problem-solving, decision-making, and natural language processing.
 
@@ -22,6 +23,7 @@ const Blogs = [
         In conclusion, autoGPT is a promising technology that has the potential to revolutionize the field of natural language processing. It can automate the process of developing NLP models, reduce the time and resources required, and improve the accuracy and effectiveness of the models. AutoGPT can be used in many applications, such as chatbots, language models, and recommendation systems. However, its use also comes with challenges and limitations that need to be addressed. As AI continues to evolve, it is likely that autoGPT will play a significant role in shaping the future of NLP and other related fields.`,
     },
     {
+        id:1,
         Title:"Anime and Code",
         Content : `Anime and code may seem like two completely unrelated topics, but they have more in common than you might think. Both have the power to inspire creativity, spark innovation, and bring people together from different cultures and backgrounds.
 

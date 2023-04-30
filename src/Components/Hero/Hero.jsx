@@ -1,5 +1,7 @@
 import React from "react";
 import "./Hero.css";
+import About from "../About/About";
+import Projects from "../Projects/Projects";
 import {
   card101,
   card111,
@@ -186,6 +188,8 @@ function Hero() {
           </div>
         </div>
       </div>
+      <About />
+      <Projects />
     </div>
   );
 }
