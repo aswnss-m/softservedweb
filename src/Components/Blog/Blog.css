@@ -35,3 +35,16 @@
 .blogCards:last-child{
     margin-bottom: 25%;
 }
+.blogContent{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    text-align: justify;
+    margin-top: 2em;
+}
+.blogPageTitle{
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+    gap: 1em;
+}
