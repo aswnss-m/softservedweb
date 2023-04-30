@@ -12,6 +12,11 @@ import card202 from './heroImages/202.png'
 import card222 from './heroImages/222.png'
 import card303 from './heroImages/303.png'
 import card333 from './heroImages/333.png'
+import behance from './logo_black/behance.svg'
+import linkedin from './logo_black/linkedin.svg'
+import github from './logo_black/github.svg'
+import instagram from './logo_black/instagram.svg'
+import twitter from './logo_black/twitter.svg'
 
 export {
     tempPic,
@@ -29,4 +34,10 @@ export {
     card222,
     card303,
     card333,
+
+    behance,
+    linkedin,
+    github,
+    instagram,
+    twitter,
 }

@@ -17,7 +17,7 @@ function App() {
       {/* <Hero />
       <About />
       <Projects /> */}
-      {/* 
+{/*       
       <Routes>
         <Route path = '/ComingSoon' element = {<ComingSoon/>}/>
       </Routes> */}
@@ -25,7 +25,7 @@ function App() {
       {/* <ComingSoon/> */}
       <BrowserRouter>
         <Routes>
-          <Route exact path='/' element={<Hero/>} />
+          <Route path='/' element={<Hero/>} />
           <Route path='/Blogs' element={<Blog />} />
           <Route path='/Blogs/:id' element={<BlogPage />} />
           <Route path='/' element={Hero} />
