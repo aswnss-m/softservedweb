@@ -16,7 +16,7 @@ function App() {
       {/* <BlogPage /> */}
       {/* <Hero />
       <About />
-      <Projects /> */}
+      */}
 {/*       
       <Routes>
         <Route path = '/ComingSoon' element = {<ComingSoon/>}/>
@@ -31,7 +31,10 @@ function App() {
           <Route path='/' element={Hero} />
         </Routes>
       </BrowserRouter>
+
+      <Projects />
       <Footer />
+
 
     </div>
   );
