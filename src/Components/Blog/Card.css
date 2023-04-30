@@ -1,0 +1,45 @@
+.blogCard{
+    display: flex;
+    margin-top:25%;
+    padding: 1em;
+    height: 30vh;
+    align-items: center;
+    gap:2em;
+    border-radius: .5em;
+    border: 2px solid black;
+    border-right: 5px solid black;
+    border-bottom: 5px solid black;
+}
+.blogImage{
+    height: 160%;
+    border: 2px solid black;
+    border-radius: .25em;
+    border-right: 5px solid black;
+    border-bottom: 5px solid black;
+}
+.blogContents{
+    /* background-color: green; */
+    text-align: left;
+    font-size:small;
+    gap: 1em;
+    display: flex;
+    flex-direction: column;
+}
+.blogContents button{
+    align-self: flex-end;
+    font-weight: 900;
+    font-size: xx-large;
+    background-color: rgb(255, 255, 255, 0);
+}
+@media screen and (max-width:600px) {
+    .blogCard{
+        flex-direction: column;
+        height: auto;
+    }
+    .blogContents{
+        text-align: center;
+    }
+    .blogContents button{
+        align-self: center;
+    }
+}
