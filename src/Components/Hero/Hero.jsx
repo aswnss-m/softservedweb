@@ -13,9 +13,13 @@ import {
   twitter,
   linkedin,
 } from "../../assets/export";
+import Projects from "../Projects/Projects";
+import Footer from "../Footer/Footer";
 
 function Hero() {
   return (
+    <div>
+
     <div className="HeroSection">
       <div className="TitleContainer">
         <div className="leftContainer">
@@ -70,6 +74,11 @@ function Hero() {
         </div>
       </div>
     </div>
+    <Projects/>
+    <Footer/>
+
+    </div>
+
   );
 }
 

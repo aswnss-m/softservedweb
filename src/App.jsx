@@ -28,12 +28,12 @@ function App() {
           <Route path='/' element={<Hero/>} />
           <Route path='/Blogs' element={<Blog />} />
           <Route path='/Blogs/:id' element={<BlogPage />} />
-          <Route path='/' element={Hero} />
+          {/* <Route path='/' element={<Hero/>} /> */}
         </Routes>
       </BrowserRouter>
 
-      <Projects />
-      <Footer />
+      {/* <Projects />
+      <Footer /> */}
 
 
     </div>

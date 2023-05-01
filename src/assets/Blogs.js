@@ -1,3 +1,5 @@
+import image01 from './Blog_images/image01.png'
+
 const Blogs = [
     {
         id:0,

@@ -41,7 +41,7 @@ function Projects() {
             </div>
           </div>
 
-          <div className="box box3">
+          <div className="box box4">
             <a href="">
               <div class="overlay"></div>
               <img src={boxImage3} alt="" />
@@ -58,14 +58,16 @@ function Projects() {
 
         <div className="secondRow">
           <div className="box box3">
-            <a href="">
-              <div class="overlay"></div>
-              <img src={boxImage4} alt="" />
-              <div className="textLayer">
-                <p className="smallDesc">Recent Project.Suee Store</p>
-                <p>Aniz BIn Nowshad</p>
-              </div>
-            </a>
+            {/* <a href=""> */}
+              <Link to ='/Blogs' >
+                <div class="overlay"></div>
+                <img src={boxImage4} alt="" />
+                <div className="textLayer">
+                  <p className="smallDesc">Recent Project.Suee Store</p>
+                  <p>Aniz BIn Nowshad</p>
+                </div>
+              </Link>
+            {/* </a> */}
           </div>
 
           <div className="colBox2">
