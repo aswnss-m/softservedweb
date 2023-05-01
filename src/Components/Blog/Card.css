@@ -1,40 +1,70 @@
 .blogCard{
     display: flex;
-    margin-top:25%;
+    /* margin:4em; */
+    margin-top: 15%;
+  
     padding: 1em;
-    height: 30vh;
+    height: 40vh;
+    /* width: 70vw; */
     align-items: center;
     gap:2em;
-    border-radius: .5em;
-    border: 2px solid black;
-    border-right: 5px solid black;
-    border-bottom: 5px solid black;
+
+    border-radius: 4px;
+    border: 3px solid #000000;
+    box-shadow: 4px 5px 0px #000000;
+
+    
+    
 }
 .blogImage{
     height: 160%;
     border: 2px solid black;
-    border-radius: .25em;
-    border-right: 5px solid black;
-    border-bottom: 5px solid black;
-    width: 180px;
-    height: 260px;
+    border-radius: 6px;
+
+    filter: drop-shadow(4px 5px 0px #000000);
+    /* width: 180px;
+    height: 260px; */
     object-fit: cover;
 }
+
 .blogContents{
-    /* background-color: green; */
+
+    overflow: hidden;
     text-align: left;
+
     font-size:small;
-    gap: 1em;
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
+    color: #000000;
 }
-.blogContents a{
+.toBlogLink{
     align-self: flex-end;
     font-weight: 900;
     font-size: xx-large;
-    background-color: rgb(255, 255, 255, 0);
+}
+.blogContents h3{
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -0.1em;
+    color: #000000;
+
+}
+.blogContents p{
+    align-self: flex-end;
+    font-weight: 400;
+    font-size: 22px;
+    letter-spacing: -0.06em;
+}
+
+@media screen and(max-width:920px) {
+    .blogImage{
+   
+    }   
 }
 @media screen and (max-width:600px) {
+   
     .blogCard{
         flex-direction: column;
         height: auto;

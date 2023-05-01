@@ -4,6 +4,7 @@ const Blogs = [
     {
         id:0,
         Title : "Ai Auto Gpt",
+        image : image01,
         Content : `Artificial intelligence (AI) has revolutionized many industries, including healthcare, finance, transportation, and retail. It involves the development of computer systems that can perform tasks that typically require human intelligence, such as learning, problem-solving, decision-making, and natural language processing.
 
         One of the recent advancements in AI is the development of autoGPT, which is an extension of the GPT (Generative Pre-trained Transformer) model. AutoGPT is an automated machine learning system that can generate and optimize deep neural networks for various natural language processing (NLP) tasks, such as text classification, question answering, and summarization.
@@ -27,6 +28,7 @@ const Blogs = [
     {
         id:1,
         Title:"Anime and Code",
+        image :image01,
         Content : `Anime and code may seem like two completely unrelated topics, but they have more in common than you might think. Both have the power to inspire creativity, spark innovation, and bring people together from different cultures and backgrounds.
 
         Anime, which is a form of Japanese animation, has become a global phenomenon, with millions of fans around the world. It is known for its vibrant art style, engaging storylines, and diverse characters. Anime has inspired countless artists, writers, and animators to create their own works, and it has also spawned a massive industry of merchandise, games, and other products.
