@@ -13,7 +13,9 @@ function BlogPage(props) {
         <Link to="/">
           <h4><span className='blogHeaderLogo'>Soft<br />Served<br />Web</span></h4>
         </Link>
-        <span className='blogHeaderTitle'>Blogs</span>
+       <Link to = "/Blogs">
+       <h1 className="blogHeaderTitle">Blogs</h1>
+       </Link>
         <p className='blogHeaderDescp'>Every now and then, a new technology comes we do a project and we will publish a blog regarding that project or research, so that it becomes easier for you to understand</p>
       </div>
       <div className="blogContent">
