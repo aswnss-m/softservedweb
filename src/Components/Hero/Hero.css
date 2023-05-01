@@ -3,14 +3,13 @@
     min-height: 100vh;
 }
 
-.container {
+/* .TitleContainer {
 
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     gap: 6em;
 
-}
+} */
 
 .TitleContainer {
 
@@ -39,13 +38,12 @@
 
 
 .cardContainer {
-    display: flex;
+    /* display: flex; */
     /* flex-direction: column; */
 }
 
 
-.scrollableCardTop,
-.scrollableCardBottom {
+.scrollableCardTop {
     box-sizing: border-box;
     height: 550px;
     overflow-y: scroll;
@@ -79,7 +77,11 @@
     flex-wrap: wrap;
 
 }
+/* 
+.scrollableCardTop:hover {
 
+    animation-play-state: paused ease-in-out;
+} */
 
 .topScroll img {
 
@@ -100,32 +102,6 @@
 }
 
 
-/* .scrollableCardBottom {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow-y: auto;
-    max-height: 50%;
-    overflow: hidden;
-
-    bottom: 0;
-}
-
-.bottomScroll {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    animation: scroll-bottom 15s linear infinite;
-}
-
-.bottomScroll img {
-    border-radius: 12px;
-    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
-    width: 200px;
-    margin: 10px;
-} */
-
 
 .scrollableCardTop {
     top: 0;
@@ -133,21 +109,6 @@
 }
 
 
-  
-/* .scrollableCardBottom {
-    bottom: 0;
-    animation:scroll-bottom 15s linear infinite;
-  }
-   */
-/* @keyframes scroll-bottom {
-    0% {
-        transform: translateY(-100%);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
-} */
 
 
 .topScroll:hover img {
@@ -178,9 +139,15 @@
 }
 
 .logos{
-    display: flex;
-    gap: 30px;
+    /* width: 100%; */
+    display: grid;
+    /* grid-template-rows:repeat(1fr 4); */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1.875em;
     /* flex-direction: row; */
+}
+.logos img{
+    width: 100%;
 }
 
 .contact{
@@ -208,6 +175,46 @@
 }
 
 @media only screen and (max-width : 880px) {}
+@media only screen and (max-width : 800px) {
+    .TitleContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .scrollableCardTop{
+      
+        /* max-height: 20%; */
+        display: flex;
+        flex-direction: row;
+        box-sizing: border-box;
+        height: 300px;
+       
+        overflow-X: hidden;
+    }
+
+    .topScroll{
+
+        display: inline-block;
+        white-space: nowrap;
+        animation: scroll-left 15s linear infinite;
+    }
+    .topScroll img{
+        width: 150px;
+    }
+
+
+    @keyframes scroll-left {
+        0% {
+                transform: translateX(0%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+    }
+
+
+
+}
 
 @media only screen and (max-width:620px) {
 
@@ -217,9 +224,30 @@
         height: 800px;
         perspective: 800px;
     }
+    
+    .infoBar{
+        width: 360px;
+        height: 78px;
+        
+    }
+    .logos{
 
+        gap: 10px;
 
+    }
+    .contact{
+        padding: 8px;
+        border-radius: 3px;
+        font-size: var(--text-size-xxs);
+    }
 
 }
 
-@media only screen and (max-width:450px) {}
+@media only screen and (max-width:450px) {
+    .title{
+        font-size: var(--text-size-l);
+        filter: drop-shadow(3px 4px 0px #000000);
+      }
+  
+  
+}

@@ -33,7 +33,9 @@ function Hero() {
           </div>
 
           <div className="infoBar">
-            <button className="contact">CONTACT</button>
+            <a href="">
+              <button className="contact">CONTACT</button>
+            </a>
             <div className="logos">
               <img src={behance} alt="" className="behance" />
               <img src={twitter} alt="" className="twitter" />
@@ -70,6 +72,7 @@ function Hero() {
               <img src={card111} alt="" />
               <img src={card101} alt="" />
             </div>
+    
           </div>
         </div>
       </div>
