@@ -31,7 +31,7 @@
 }
 .blogHeaderDescp{
     grid-area: descp;
-    width: min(45%,75vw);
+    width: min(50%,75vw);
     text-align: right;
     justify-self: right;
     letter-spacing: var(--letter-spacing-m);
@@ -56,4 +56,12 @@
     font-weight: bold;
     text-align: center;
     gap: 1em;
+}
+@media screen and (max-width:850px){
+    .blogHeaderTitle{
+        font-size: var(--text-size-xm);
+    }
+    .blogHeaderDescp{
+        width: 100%;
+    }
 }
