@@ -163,6 +163,14 @@
     line-height: 20px;
 
 }
+.contact:hover{
+    transition: all 0.25s ease-out ;
+    background-color: var(--bg-primary);
+    color: #000000;
+    /* border: 2px solid #000000; */
+    box-shadow: 4px 4px 0px #000000;
+
+}
 
 
 
