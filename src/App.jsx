@@ -34,6 +34,8 @@ function App() {
 
       {/* <Projects />
       <Footer /> */}
+      {/* <Footer/> */}
+      <Footer/>
 
 
     </div>

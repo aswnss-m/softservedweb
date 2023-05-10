@@ -28,6 +28,73 @@
     color: var(--color-blue);
     transition: 0.75s;
 }
+.ContactBar{
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    gap: 30px;
+    box-sizing: border-box;
+    padding-inline: 4em;
+    padding-bottom: 3em;
+}
+.contactFooter{
+
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #000000;
+    color: var(--bg-primary);
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 500;
+    font-size: var(--text-size-xs);
+    line-height: 20px;
+
+}
+
+
+.contactContainer{
+
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5em;
+    
+    /* position: absolute; */
+    /* width: 80vw;
+    height: 40vh; */
+
+    height: fit-content;
+
+    /* background: rgba(255, 255, 255, 0.1); */
+    border: 3px solid #000000;
+    box-shadow: 6px 6px 0px #000000;
+    border-radius: 6px;
+
+}
+.contactContent{
+    /* padding-top: 2em; */
+    display: flex;
+    flex-direction: column;
+
+    padding-block: 2em;
+    padding-inline: 4em;
+}
+
+.contactContent h2{
+    font-style: italic;
+    font-weight: 500;
+    font-size: 40px;
+    letter-spacing: -0.08em;
+
+}
+.contactContent p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: -0.05em;
+}
+
 
 @media only screen and (max-width:992px) {}
 
@@ -41,7 +108,14 @@
     }
 }
 
-@media only screen and (max-width:620px) {}
+@media only screen and (max-width:620px) {
+    .ContactBar{
+        flex-direction: column;
+        padding-inline: 0.5em;
+        gap: 15px;
+    }
+
+}
 
 @media only screen and (max-width:390px) {
 

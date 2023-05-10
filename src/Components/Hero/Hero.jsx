@@ -44,6 +44,7 @@ function Hero() {
               <img src={instagram} alt="" className="instagram" />
             </div>
           </div>
+
         </div>
 
         <div className="cardContainer">
@@ -78,7 +79,8 @@ function Hero() {
       </div>
     </div>
     <Projects/>
-    <Footer/>
+    
+    
 
     </div>
 
