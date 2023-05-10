@@ -1,121 +1,71 @@
 .AboutContainer {
-
-    min-height: 70vh;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
-}
-
-.description {
-
-    padding-right: 4.8em;
-
-    font-weight: 400;
-    font-size: var(--text-size-m);
-    line-height: 35px;
-    letter-spacing: var(--letter-spacing-m);
-}
-
-.tempbutton {
-    padding-top: 8em;
-    width: 100%;
-}
-
-.tempImage {
-    /* width: 100%; */
-    max-width: 100%;
+    min-height: 40vh;
+   
+    background-color: var(--color-lightRed);
+    /* padding:0px; */
+    margin-bottom: 2em;
+    border-radius: 4px;
 
 }
 
-.buttonContainter {
-    padding-top: 6em;
-}
-
-.myButton {
-
-    display: inline-block;
-    padding: 15px 25px;
-    background-color: var(--color-darkGreen);
-    color: var(--bg-primary);
-    border: none;
-    border-radius: 6px;
-    font-size: var(--text-size-s);
+.descriptionBox{
+    padding: 2em;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
     text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    position: relative;
+    gap: 2em;
 
-    border: 2px solid var(--bg-primary);
+}
+.descriptionBox p{
+    font-weight: 400;
+    font-size: 25px;
+    letter-spacing: var(--letter-spacing-m);
 
-
-    text-transform: uppercase;
-    font-family: 'thinoothin';
-    font-weight: 600;
 }
 
-.myButton:hover {
-    background-color: #050505;
-    transform: translateX(-2px);
-    border: 2px solid var(--bg-primary);
-    animation: 20ms
-}
+.myButton{
 
-.myButton:active {
-    background-color: #050505;
-}
-
-
-.buttonBG {
-    background-color: var(--color-darkGreen);
-    padding: 20px 40px;
-
-    position: absolute;
-    /* Add position absolute to pseudo-element */
-
-    /* z-index: 2; */
-    /* left: 0%; */
-    left: 0;
-    top: 0;
-    width: 120%;
-    height: 130%;
-    /* padding: 30px 30px; */
-    /* bottom: 0; */
+    /* width: 294px;
+    height: 78px; */
+    box-sizing: border-box;
+    background: #FEFCF6;
+    border: 2px solid #000000;
+    box-shadow: 4px 4px 0px #000000;
     border-radius: 6px;
-    z-index: -1;
-
 }
+.myButton h4{
 
+    padding: 10px;
+    padding-inline: 20px;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing:var(--letter-spacing-m);
+    text-transform: uppercase;
+}
 @media only screen and (max-width:1920px) {}
 
 @media only screen and (max-width:1200px) {}
 
 @media only screen and (max-width:992px) {
-    .description {
-        font-size: var(--text-size-s);
-
-
-    }
 
 }
 
 @media only screen and (max-width : 880px) {
-    .AboutContainer {
-        grid: none;
-        display: flex;
-        flex-direction: column-reverse;
-        gap: 2em;
-    }
 
-    .description {
-        padding-right: 0.1px
-    }
-
-    .buttonContainter {
-        padding-bottom: 4em;
-    }
 }
 
 @media only screen and (max-width:620px) {}
 
-@media only screen and (max-width:450px) {}
+@media only screen and (max-width:520px) {
+    .descriptionBox{
+        padding: 1em;
+    }
+    .descriptionBox p{
+        font-weight: 400;
+        font-size: 18px;
+        letter-spacing: var(--letter-spacing-l);
+    
+    }
+}

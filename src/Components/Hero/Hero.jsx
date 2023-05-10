@@ -15,6 +15,7 @@ import {
 } from "../../assets/export";
 import Projects from "../Projects/Projects";
 import Footer from "../Footer/Footer";
+import About from "../About/About";
 
 function Hero() {
   return (
@@ -78,6 +79,7 @@ function Hero() {
         </div>
       </div>
     </div>
+    <About/>
     <Projects/>
     
     

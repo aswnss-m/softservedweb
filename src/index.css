@@ -25,6 +25,7 @@
     --color-blue: #2CADE4;
     --color-red: #F30C59;
     --color-darkGreen: #002121;
+    --color-lightRed:#FFF1F1;
 
     --letter-spacing-m: -0.08em;
     --letter-spacing-l: -0.04em;
@@ -76,3 +77,4 @@ body{
     -webkit-font-smoothing: antialiased;
   
 }
+
