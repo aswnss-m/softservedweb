@@ -18,41 +18,41 @@ function Projects() {
         <div className="firstRow">
           <div className="colBox1">
             <div className="box box1">
-              <a href="">
+              <Link to="/Portfolio">
                 <div class="overlay"></div>
                 <img src={boxImage1} alt="" />
                 <div className="textLayer">
-                  <p className="smallDesc">Recent Project.Suee Store</p>
-                  <p>Aniz Bin Nowshad</p>
+                  <p className="smallDesc">Soft Servers</p>
+                  <p>Meet our Team</p>
                 </div>
-              </a>
+              </Link>
             </div>
 
             <div className="box box2">
-              <a href="">
+                <Link to = '/WorkDone'> 
                 <div class="overlay"></div>
                 <img src={boxImage2} alt="" />
 
                 <div className="textLayer">
-                  <p className="smallDesc">Recent Project.Suee Store</p>
-                  <p>Aniz BIn Nowshad</p>
+                  <p className="smallDesc">Recent Projects</p>
+                  <p>Take a look at our projects</p>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
 
           <div className="box box4">
             {/* <a href=""> */}
-              <Link to = '/Playground' >
-                <div class="overlay"></div>
-                <img src={boxImage3} alt="" />
-                <div className="textOverlay">
-                  <div className="textLayer">
-                    <p className="smallDesc">Recent Project.Suee Store</p>
-                    <p>Aniz BIn Nowshad</p>
-                  </div>
+            <Link to="/Playground">
+              <div class="overlay"></div>
+              <img src={boxImage3} alt="" />
+              <div className="textOverlay">
+                <div className="textLayer">
+                  <p className="smallDesc">Playground</p>
+                  <p>Soft Served Playground</p>
                 </div>
-              </Link>
+              </div>
+            </Link>
             {/* </a> */}
           </div>
         </div>
@@ -60,14 +60,14 @@ function Projects() {
         <div className="secondRow">
           <div className="box box3">
             {/* <a href=""> */}
-              <Link to ='/Blogs' >
-                <div class="overlay"></div>
-                <img src={boxImage4} alt="" />
-                <div className="textLayer">
-                  <p className="smallDesc">Recent Project.Suee Store</p>
-                  <p>Aniz BIn Nowshad</p>
-                </div>
-              </Link>
+            <Link to="/Blogs">
+              <div class="overlay"></div>
+              <img src={boxImage4} alt="" />
+              <div className="textLayer">
+                <p className="smallDesc">Recent Blogs</p>
+                <p>Soft Served Blogs</p>
+              </div>
+            </Link>
             {/* </a> */}
           </div>
 

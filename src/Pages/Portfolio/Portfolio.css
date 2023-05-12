@@ -1,0 +1,25 @@
+.darkSocialLogo {
+
+    padding: 1.2em;
+    padding-inline: 1em;
+
+    filter: brightness(30%);
+    perspective: 100px;
+
+    /* transition: transform 1s; */
+    transition: 0.5s;
+
+}
+
+.darkSocialLogo:hover {
+    filter: brightness(80%);
+    /* transform: translatez(40px); */
+    transition: 0.75s;
+}
+
+
+.portfolioCards{
+    display: flex;
+    flex-direction: row;
+    gap: 5em;
+}

@@ -18,6 +18,13 @@ import github from './logo_black/github.svg'
 import instagram from './logo_black/instagram.svg'
 import twitter from './logo_black/twitter.svg'
 
+import darkInstagram from './DarkLogo/Instagram - Dark.svg'
+import darkGithub from './DarkLogo/Github - Dark.svg'
+import darkLinkedin from './DarkLogo/LinkedIn - Dark.svg'
+import darkTwitter from './DarkLogo/Twitter - Dark.svg'
+import darkHashode from './DarkLogo/Hashnode - Dark.svg'
+
+
 export {
     tempPic,
     button,
@@ -41,3 +48,22 @@ export {
     instagram,
     twitter,
 }
+
+export const darkSocials = [
+    {
+        src : darkGithub
+    },
+    {
+        src : darkInstagram
+    },
+    {
+        src : darkLinkedin
+    },
+    {
+        src : darkTwitter
+    },
+    {
+        src : darkHashode
+    },
+
+]
