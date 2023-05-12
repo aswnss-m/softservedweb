@@ -32,7 +32,7 @@ function Playground() {
                 <br />
                 <p className="projectDesc"> {item.content}</p>
                 <div className="projectLinks">
-                    {/* <img src={github} alt="" /> */}
+                    <img src={github} alt="" />
                 </div>
               </div>
             </div>
