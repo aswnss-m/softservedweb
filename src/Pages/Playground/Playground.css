@@ -1,0 +1,151 @@
+.playgroundHeader{
+    display: grid;
+    grid-template-areas: 
+    "logo title"
+    "descp descp";
+    gap: 15px;
+    padding-bottom: 8em;
+}
+.playgroundHeaderLogo{
+    font-family: 'thinoothin';
+    grid-area: logo;
+    /* border-radius: 1px solid #fd0000e4; */
+    font-size: var(--text-size-xxm);
+    color:var(--color-red);
+    filter: drop-shadow(2px 2px 0px #000000);
+
+}
+
+.playgroundHeaderTitle{
+    font-family: 'thinoothin';
+    grid-area: title;
+    font-size: var(--text-size-xl);
+    color: #FFC93C;
+    justify-self: right;
+    filter: drop-shadow(5px 5px 0px #000000);
+
+
+}
+.playgroundHeaderDescp{
+
+    grid-area: descp;
+    width: min(50%,75vw);
+    text-align: right;
+    justify-self: right;
+    font-size: var(--text-size-xs);
+    letter-spacing: var(--letter-spacing-m);
+
+}
+.projectCardContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+}
+
+.projectContentBox{
+    /* width: 492px;
+    height: 250px; */
+
+    /* width: 392px; */
+    /* height: 250px; */
+    width: fit-content;
+    height: fit-content;
+    background: #FEFCF6;
+    border: 3px solid #000000;
+    box-shadow: 4px 4px 0px #000000;
+    border-radius: 6px;
+    padding: 1.4em;
+}
+
+.projectContentBox h2{
+    font-style: italic;
+    font-weight: 600;
+    font-size: 36px;
+    text-transform: capitalize;
+    letter-spacing: var(--letter-spacing-l);
+}
+
+.projectContentBox p{
+
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    /* align-items: center;
+    letter-spacing: -0.02em;
+    text-transform: capitalize; */
+    font-size: var(--text-size-xs);
+    letter-spacing: var(--letter-spacing-m);
+}
+
+.projectContentBox img{
+    width: 100%;
+    border-radius: 6px;
+  
+}
+.projectImage{
+    border: 3px solid #000000;
+    border-radius: 6px;
+
+}
+
+.projectCard{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+.projectLinks img{
+    /* text-align: right; */
+    width: fit-content
+}
+
+@media screen and (max-width:920px){
+
+    .projectCardContainer{
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+@media screen and (max-width:870px){
+    .playgroundHeaderTitle{
+        font-size: var(--text-size-l);
+    }
+    .playgroundHeaderDescp{
+        font-size: var(--text-size-xs);
+        width: 70%;
+    }
+    .playgroundHeader{
+        gap: 7px;
+    }
+  
+}
+@media screen and (max-width:660px){
+    .playgroundHeaderTitle{
+        font-size: var(--text-size-lm);
+    }
+    .playgroundHeaderDescp{
+        font-size: var(--text-size-xxs);
+        /* width: 70%; */
+    }
+    .playgroundHeader{
+        gap: 2px;
+    }
+}
+@media screen and (max-width:420px){
+    .playgroundHeaderLogo{
+        filter: drop-shadow(1px 1px 0px #000000);
+        font-size: var(--text-size-m);
+
+    }
+    .playgroundHeaderTitle{
+        filter: drop-shadow(3px 3px 0px #000000);
+        font-size: var(--text-size-xxm);
+    }
+    .playgroundHeaderDescp{
+        font-size: var(--text-size-xxxs);
+        /* width: 70%; */
+    }
+    .playgroundHeader{
+        gap: 0px;
+    }
+}

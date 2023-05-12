@@ -2,6 +2,7 @@ import image01 from './Blog_images/image01.png'
 
 const Blogs = [
     {
+        
         id:0,
         Title : "Ai Auto Gpt",
         image : image01,

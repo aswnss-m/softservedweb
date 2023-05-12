@@ -42,17 +42,18 @@ function Projects() {
           </div>
 
           <div className="box box4">
-            <a href="">
-              <div class="overlay"></div>
-              <img src={boxImage3} alt="" />
-
-              <div className="textOverlay">
-                <div className="textLayer">
-                  <p className="smallDesc">Recent Project.Suee Store</p>
-                  <p>Aniz BIn Nowshad</p>
+            {/* <a href=""> */}
+              <Link to = '/Playground' >
+                <div class="overlay"></div>
+                <img src={boxImage3} alt="" />
+                <div className="textOverlay">
+                  <div className="textLayer">
+                    <p className="smallDesc">Recent Project.Suee Store</p>
+                    <p>Aniz BIn Nowshad</p>
+                  </div>
                 </div>
-              </div>
-            </a>
+              </Link>
+            {/* </a> */}
           </div>
         </div>
 

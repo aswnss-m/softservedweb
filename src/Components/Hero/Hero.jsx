@@ -16,6 +16,7 @@ import {
 import Projects from "../Projects/Projects";
 import Footer from "../Footer/Footer";
 import About from "../About/About";
+import Playground from "../../Pages/Playground/Playground";
 
 function Hero() {
   return (
@@ -28,6 +29,7 @@ function Hero() {
             {/* <h1 className="title Soft">Soft</h1>
             <h1 className="title Serve">Served</h1>
             <h1 className="title Web">Web</h1> */}
+
             <h1 className="title">
               Soft <br /> Served <br /> Web
             </h1>
@@ -80,6 +82,7 @@ function Hero() {
       </div>
     </div>
     <About/>
+    {/* <Playground/> */}
     <Projects/>
     
     

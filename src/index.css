@@ -32,12 +32,14 @@
 
     --text-size-xl: 7.5em;
     --text-size-l: 5.5em;
+    --text-size-lm:4.5em;
     --text-size-xm: 3.25em;
     --text-size-xxm: 2.25em;
     --text-size-m: 1.625em;
     --text-size-s: 1.5em;
     --text-size-xs: 1.25em ;
     --text-size-xxs: 0.875em ;
+    --text-size-xxxs: 0.65em ;
 
     /* filter: drop-shadow(4px 5px 0px #000000); */
 

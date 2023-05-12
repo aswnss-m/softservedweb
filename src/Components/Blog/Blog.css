@@ -9,14 +9,14 @@
     grid-template-areas: 
     "logo title"
     "descp descp";
-    gap: 10px;
+    gap: 15px;
 }
 .blogHeaderLogo{
     font-family: 'thinoothin';
     grid-area: logo;
     font-size: var(--text-size-xxm);
     color:var(--color-red);
-    filter: drop-shadow(1px 2px 0px #000000);
+    filter: drop-shadow(2px 2px 0px #000000);
     
 }
 
@@ -26,7 +26,7 @@
     font-size: var(--text-size-xl);
     color: #FFC93C;
     justify-self: right;
-    filter: drop-shadow(4px 5px 0px #000000);
+    filter: drop-shadow(5px 5px 0px #000000);
 
 }
 .blogHeaderDescp{
@@ -34,6 +34,7 @@
     width: min(50%,75vw);
     text-align: right;
     justify-self: right;
+    font-size: var(--text-size-xs);
     letter-spacing: var(--letter-spacing-m);
 
     /* font-size: var(--text-size-xxs); */
@@ -59,9 +60,40 @@
 }
 @media screen and (max-width:850px){
     .blogHeaderTitle{
-        font-size: var(--text-size-xm);
+        /* font-size: var(--text-size-xm); */
     }
     .blogHeaderDescp{
-        width: 100%;
+        width: 70%;
+    }
+}
+@media screen and (max-width:660px){
+    .blogHeaderTitle{
+        font-size: var(--text-size-lm);
+    }
+    .blogHeaderDescp{
+        font-size: var(--text-size-xxs);
+        /* width: 70%; */
+    }
+    .blogHeader{
+        gap: 2px;
+    }
+}
+
+@media screen and (max-width:420px){
+    .blogHeaderLogo{
+        filter: drop-shadow(1px 1px 0px #000000);
+        font-size: var(--text-size-m);
+
+    }
+    .blogHeaderTitle{
+        filter: drop-shadow(3px 3px 0px #000000);
+        font-size: var(--text-size-xxm);
+    }
+    .blogHeaderDescp{
+        font-size: var(--text-size-xxxs);
+        /* width: 70%; */
+    }
+    .blogHeader{
+        gap: 0px;
     }
 }

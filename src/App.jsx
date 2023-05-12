@@ -9,6 +9,7 @@ import Blog from "./Components/Blog/Blog";
 import BlogPage from "./Components/Blog/BlogPage";
 
 import { BrowserRouter,Route, Routes } from "react-router-dom";
+import Playground from "./Pages/Playground/Playground";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Hero/>} />
+          <Route path='/Playground' element = {<Playground/>}/>
           <Route path='/Blogs' element={<Blog />} />
           <Route path='/Blogs/:id' element={<BlogPage />} />
           {/* <Route path='/' element={<Hero/>} /> */}
